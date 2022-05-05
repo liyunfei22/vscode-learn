@@ -1,4 +1,7 @@
 {
+	"scripts": {
+		"init": "ts-node ./bin/index.ts"
+	},
 	"dependencies": {
 		"@types/cheerio": "^0.22.31",
 		"@types/node": "^17.0.23",
