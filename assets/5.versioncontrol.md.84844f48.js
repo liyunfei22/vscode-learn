@@ -1,0 +1,1 @@
+import{_ as e,c as t,o}from"./app.a381d5d2.js";const l='{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"5.versioncontrol.md","lastUpdated":1651738270000}',r={name:"5.versioncontrol.md"};function a(n,s,c,_,i,d){return o(),t("div")}var m=e(r,[["render",a]]);export{l as __pageData,m as default};

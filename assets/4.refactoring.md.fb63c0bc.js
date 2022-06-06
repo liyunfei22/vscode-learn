@@ -1,0 +1,1 @@
+import{_ as e,c as t,o as a}from"./app.a381d5d2.js";const f='{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"4.refactoring.md","lastUpdated":1651738270000}',r={name:"4.refactoring.md"};function o(c,n,s,_,i,d){return a(),t("div")}var m=e(r,[["render",o]]);export{f as __pageData,m as default};
