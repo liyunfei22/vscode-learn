@@ -3,7 +3,8 @@
     "init": "ts-node ./bin/index.ts",
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
-    "docs:serve": "vitepress serve docs"
+    "docs:serve": "vitepress serve docs",
+    "deploy": "sh deploy.sh"
   },
   "dependencies": {
     "@types/cheerio": "^0.22.31",

@@ -20,11 +20,15 @@ export default defineConfig({
         text: "开始",
         items: [
           { text: "介绍", link: "/1.getStarted" },
-          { text: "集成", link: "/getting-started" },
+          { text: "用户界面", link: "/2.userInterface" },
+          { text: "调试", link: "/3.debug" },
+          { text: "重构", link: "/4.refactoring.md" },
         ],
       },
     ],
-    socialLinks: [{ icon: "github", link: "/github" }],
+    socialLinks: [
+      { icon: "github", link: "https://github.com/liyunfei22/vscode-learn" },
+    ],
     footer: {
       message: "Released under the MIT License.",
       copyright: "Copyright © 2019-present liyf",
