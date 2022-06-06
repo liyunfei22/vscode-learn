@@ -36,7 +36,7 @@ function genImg($: cheerio.Root, img: cheerio.Element) {
   const imgPath = `${domain}${$(img).attr('src')}`;
   console.log(imgPath);
   const baseName = path.basename(imgPath);
-  const filepath = path.join(__dirname, '../assets', config.assets, baseName);
+  const filepath = path.join(__dirname, '../docs/assets', config.assets, baseName);
   const wStream = fs.createWriteStream(filepath);
   https.get(imgPath, (res) => {
     res.pipe(wStream);
