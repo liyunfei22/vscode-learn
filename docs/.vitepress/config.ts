@@ -5,7 +5,7 @@ import {
 export default defineConfig({
   title: "vsCode",
   description: "vsCode 文档",
-  base: "/",
+  base: "/vscode-learn/",
   lang: "en-US",
   markdown: {
     theme: "material-palenight",
