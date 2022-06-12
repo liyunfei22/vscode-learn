@@ -1,0 +1,5 @@
+![disable-telemetry.png](./assets/Telemetry/disable-telemetry.png)
+![output-log-telemetry.png](./assets/Telemetry/output-log-telemetry.png)
+![open-telemetry-log.png](./assets/Telemetry/open-telemetry-log.png)
+![online-settings.png](./assets/Telemetry/online-settings.png)
+![extension-recommendation-based-on.png](./assets/Telemetry/extension-recommendation-based-on.png)

@@ -1,0 +1,5 @@
+![remote-repositories.png](./assets/VSCodefortheWeb/remote-repositories.png)
+![status-indicator.png](./assets/VSCodefortheWeb/status-indicator.png)
+![python-extension-limit.png](./assets/VSCodefortheWeb/python-extension-limit.png)
+![extension-limit.png](./assets/VSCodefortheWeb/extension-limit.png)
+![allow-clipboard-access.png](./assets/VSCodefortheWeb/allow-clipboard-access.png)

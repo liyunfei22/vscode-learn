@@ -1,64 +1,40 @@
-import https from 'https';
-import * as cheerio from 'cheerio';
-import fs from 'fs';
-import path from 'path';
-import config from '../config';
-import { IncomingMessage } from 'http';
-
-const domain = 'https://code.visualstudio.com'
-const pagePath = config.path;
-const mdPath = path.resolve(__dirname, `../docs/${config.md}`);
-mkAssetsDir();
-mkFileMd();
-https.get(domain + pagePath, (res) =>
-{
-  getPageImgs(res);
-
-}).on('error', (e) => {
-  console.error(e);
-});
-
-function getPageImgs(res: IncomingMessage) {
-  let html = '';
-  res.on('data', (d) => {
-    html += d.toString();
-  });
-  res.on('end', () => {
-    const $ = cheerio.load(html);
-    const imgs = $('p img');
-    imgs.each((i, img) => {
-      genImg($, img);
-    });
-  });
-}
-
-function genImg($: cheerio.Root, img: cheerio.Element) {
-  const imgPath = `${domain}${$(img).attr('src')}`;
-  console.log(imgPath);
-  const baseName = path.basename(imgPath);
-  const filepath = path.join(__dirname, '../docs/assets', config.assets, baseName);
-  const wStream = fs.createWriteStream(filepath);
-  https.get(imgPath, (res) => {
-    res.pipe(wStream);
-  });
-}
-
-function mkFileMd() {
-  fs.readFile(mdPath, 'utf8', (err, data) => {
-    if (err) {
-      fs.writeFile(mdPath, '', 'utf8', (err) => {
-        if (err) {
-          console.log(err);
-        }
-      });
-    }
-  });
-}
-
-function mkAssetsDir() {
+import path from "path";
+import {
+  getHtml,
+  getUrls,
+  mkFileMd,
+  getImageList,
+  domain,
+  mkDir,
+  downloadImg,
+  appendMd
+} from "./utils";
+import colors from 'colors';
+async function init() {
   try {
-    fs.mkdirSync(path.resolve(__dirname, `../assets/${config.assets}`));
+    const homeHtml = await getHtml(domain + "/docs");
+    const list = getUrls(homeHtml);
+    for (const item of list) {
+      // 创建文件夹
+      console.log(colors.green("文件夹 " + item.name));
+      await mkDir(path.join(__dirname, "../docs/assets", item.name));
+      const html = await getHtml(domain + item.href);
+      const mdUrl = path.join(__dirname, "../docs", item.name + ".md");
+      console.log(mdUrl);
+      await mkFileMd(mdUrl);
+      const imageList = await getImageList(html);
+      for (const image of imageList) {
+        await downloadImg(
+          image.href,
+          path.join(__dirname, "../docs/assets", item.name, image.name)
+        );
+        console.log(colors.blue("图片 " + image.name));
+        appendMd(mdUrl, `![${image.name}](./assets/${item.name}/${image.name})\n`);
+        console.log(colors.yellow(`md文件 ${mdUrl} append图片 -> ${image.name}`));
+      }
+    }
   } catch (e) {
-    console.log('文件已经创建');
+    console.log(e);
   }
 }
+init();

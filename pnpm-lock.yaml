@@ -2,8 +2,10 @@ lockfileVersion: 5.3
 
 specifiers:
   '@types/cheerio': ^0.22.31
+  '@types/colors': ^1.2.1
   '@types/node': ^17.0.23
   cheerio: ^1.0.0-rc.10
+  colors: ^1.4.0
   ts-node: ^10.7.0
   typescript: ^4.6.3
   vitepress: ^1.0.0-alpha.1
@@ -12,10 +14,12 @@ dependencies:
   '@types/cheerio': 0.22.31
   '@types/node': 17.0.23
   cheerio: 1.0.0-rc.10
+  colors: 1.4.0
   ts-node: 10.7.0_ee885bc7281b682b6adbed6ae09ee090
   typescript: 4.6.3
 
 devDependencies:
+  '@types/colors': 1.2.1
   vitepress: 1.0.0-alpha.1
 
 packages:
@@ -186,6 +190,13 @@ packages:
     dependencies:
       '@types/node': 17.0.23
     dev: false
+
+  /@types/colors/1.2.1:
+    resolution: {integrity: sha512-7jNkpfN2lVO07nJ1RWzyMnNhH/I5N9iWuMPx9pedptxJ4MODf8rRV0lbJi6RakQ4sKQk231Fw4e2W9n3D7gZ3w==}
+    deprecated: This is a stub types definition. colors provides its own type definitions, so you don't need this installed.
+    dependencies:
+      colors: 1.4.0
+    dev: true
 
   /@types/node/17.0.23:
     resolution: {integrity: sha512-UxDxWn7dl97rKVeVS61vErvw086aCYhDLyvRQZ5Rk65rZKepaFdm53GeqXaKBuOhED4e9uWq34IC3TdSdJJ2Gw==}
@@ -385,6 +396,10 @@ packages:
       parse5-htmlparser2-tree-adapter: 6.0.1
       tslib: 2.3.1
     dev: false
+
+  /colors/1.4.0:
+    resolution: {integrity: sha512-a+UqTh4kgZg/SlGvfbzDHpgRu7AAQOmmqRHJnxhRZICKFUT91brVhNNt58CMWU9PsBbv3PDCZUHbVxuDiH2mtA==}
+    engines: {node: '>=0.1.90'}
 
   /create-require/1.1.1:
     resolution: {integrity: sha512-dcKFX3jn0MpIaXjisoRvexIJVEKzaq7z2rZKxf+MSr9TkdmHmsU4m2lcLojrj/FHl8mk5VxMmYA+ftRkP/3oKQ==}
@@ -658,7 +673,7 @@ packages:
     dev: true
 
   /fsevents/2.3.2:
-    resolution: {integrity: sha1-ilJveLj99GI7cJ4Ll1xSwkwC/Ro=}
+    resolution: {integrity: sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==}
     engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
     os: [darwin]
     requiresBuild: true

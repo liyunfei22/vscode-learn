@@ -1,0 +1,7 @@
+![install-mssql.png](./assets/T-SQL/install-mssql.png)
+![execute.gif](./assets/T-SQL/execute.gif)
+![save.gif](./assets/T-SQL/save.gif)
+![intellisense.gif](./assets/T-SQL/intellisense.gif)
+![linting.gif](./assets/T-SQL/linting.gif)
+![peekdefinition.gif](./assets/T-SQL/peekdefinition.gif)
+![snippets.gif](./assets/T-SQL/snippets.gif)

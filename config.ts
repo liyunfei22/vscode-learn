@@ -1,5 +1,5 @@
 export default {
-  "path": "/docs/editor/userdefinedsnippets",
-  "md": "6.Snippets.md",
-  "assets": "userdefinedsnippets"
-}
+  path: "/docs/getstarted/userinterface",
+  md: "2.userinterface.md",
+  assets: "userinterface",
+};

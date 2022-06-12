@@ -1,0 +1,7 @@
+![hero.png](./assets/CommandLine/hero.png)
+![command-line-help.png](./assets/CommandLine/command-line-help.png)
+![launch-vscode.png](./assets/CommandLine/launch-vscode.png)
+![install-extension.png](./assets/CommandLine/install-extension.png)
+![goto-line-column.png](./assets/CommandLine/goto-line-column.png)
+![launch-locale.png](./assets/CommandLine/launch-locale.png)
+![vscode-url.png](./assets/CommandLine/vscode-url.png)

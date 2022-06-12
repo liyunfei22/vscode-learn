@@ -1,0 +1,5 @@
+![ajax-snippet.gif](./assets/Snippets/ajax-snippet.gif)
+![builtin-javascript-snippets.png](./assets/Snippets/builtin-javascript-snippets.png)
+![category-snippets.png](./assets/Snippets/category-snippets.png)
+![snippet-dropdown.png](./assets/Snippets/snippet-dropdown.png)
+![hide-from-intellisense.png](./assets/Snippets/hide-from-intellisense.png)

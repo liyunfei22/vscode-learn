@@ -1,0 +1,6 @@
+![lodash-typings.png](./assets/WorkingwithJavaScript/lodash-typings.png)
+![jsconfig_setup.png](./assets/WorkingwithJavaScript/jsconfig_setup.png)
+![complex_jsconfig_setup.png](./assets/WorkingwithJavaScript/complex_jsconfig_setup.png)
+![checkjs-example.gif](./assets/WorkingwithJavaScript/checkjs-example.gif)
+![disable-TS-language.png](./assets/WorkingwithJavaScript/disable-TS-language.png)
+![partial-mode-status-item.png](./assets/WorkingwithJavaScript/partial-mode-status-item.png)

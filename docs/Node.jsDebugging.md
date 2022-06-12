@@ -1,0 +1,6 @@
+![auto-attach.gif](./assets/Node.jsDebugging/auto-attach.gif)
+![create-debug-terminal.png](./assets/Node.jsDebugging/create-debug-terminal.png)
+![launch-snippets.png](./assets/Node.jsDebugging/launch-snippets.png)
+![add-configuration-button.png](./assets/Node.jsDebugging/add-configuration-button.png)
+![process-picker.png](./assets/Node.jsDebugging/process-picker.png)
+![loaded-scripts-explorer.gif](./assets/Node.jsDebugging/loaded-scripts-explorer.gif)

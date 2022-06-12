@@ -1,0 +1,6 @@
+![htmlintellisense.png](./assets/HTML/htmlintellisense.png)
+![auto-close1.gif](./assets/HTML/auto-close1.gif)
+![auto-close2.gif](./assets/HTML/auto-close2.gif)
+![htmlhover.png](./assets/HTML/htmlhover.png)
+![color-picker-html.png](./assets/HTML/color-picker-html.png)
+![emmetsnippet.gif](./assets/HTML/emmetsnippet.gif)
