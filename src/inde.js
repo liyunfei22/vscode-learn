@@ -8,3 +8,6 @@ function add(a, b) {
 }
 
 add()
+// function add(a, b) {         ss
+// should return 100            ss
+// Language: javascript         dd

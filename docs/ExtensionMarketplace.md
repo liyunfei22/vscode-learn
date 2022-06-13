@@ -1,25 +1,17 @@
+# 扩展
+通过扩展增强 Visual Studio Code 的功能
+## 查看扩展
+快捷键：`⇧⌘X`
 ![extensions-view-icon.png](./assets/ExtensionMarketplace/extensions-view-icon.png)
-![extensions-popular.png](./assets/ExtensionMarketplace/extensions-popular.png)
-![todo-highlighting.png](./assets/ExtensionMarketplace/todo-highlighting.png)
-![todo-highlight-details.png](./assets/ExtensionMarketplace/todo-highlight-details.png)
-![manage-button.png](./assets/ExtensionMarketplace/manage-button.png)
-![search-for-todo-extension.png](./assets/ExtensionMarketplace/search-for-todo-extension.png)
-![todo-highlight-commands.png](./assets/ExtensionMarketplace/todo-highlight-commands.png)
-![todo-highlight-settings.png](./assets/ExtensionMarketplace/todo-highlight-settings.png)
-![todo-highlight-uninstall.png](./assets/ExtensionMarketplace/todo-highlight-uninstall.png)
-![extension-contributions.png](./assets/ExtensionMarketplace/extension-contributions.png)
-![extension-pack.png](./assets/ExtensionMarketplace/extension-pack.png)
-![extensions-view-filter-menu.png](./assets/ExtensionMarketplace/extensions-view-filter-menu.png)
-![more-button.png](./assets/ExtensionMarketplace/more-button.png)
-![more-dropdown.png](./assets/ExtensionMarketplace/more-dropdown.png)
-![extensions-python.png](./assets/ExtensionMarketplace/extensions-python.png)
-![uninstall-extension.png](./assets/ExtensionMarketplace/uninstall-extension.png)
-![enable-extension.png](./assets/ExtensionMarketplace/enable-extension.png)
-![ignore-recommendation.png](./assets/ExtensionMarketplace/ignore-recommendation.png)
-![extension-identifier.png](./assets/ExtensionMarketplace/extension-identifier.png)
-![extension-search-filters.png](./assets/ExtensionMarketplace/extension-search-filters.png)
-![sort-install-count.png](./assets/ExtensionMarketplace/sort-install-count.png)
-![categories-and-tags.png](./assets/ExtensionMarketplace/categories-and-tags.png)
-![extension-search-categories.png](./assets/ExtensionMarketplace/extension-search-categories.png)
-![recommendations.png](./assets/ExtensionMarketplace/recommendations.png)
-![extension-identifier.png](./assets/ExtensionMarketplace/extension-identifier.png)
+## 安装扩展
+
+## 工作区推荐的扩展
+一组好的扩展可以提高使用特定工作区或编程语言的效率，并且您经常希望与您的团队或同事共享此列表。您可以使用扩展：配置推荐的扩展（工作区文件夹）命令为工作区创建推荐的扩展列表。
+
+在单个文件夹工作区中，该命令会在工作区 .vscode 文件夹中创建一个 extensions.json 文件，您可以在其中添加扩展标识符列表 ({publisherName}.{extensionName})。
+```
+{
+  "recommendations": ["dbaeumer.vscode-eslint", "esbenp.prettier-vscode"]
+}
+
+```
