@@ -9,6 +9,8 @@
 set -e
 
 # build
+# nvm use v14.17.0
+
 npm run docs:build
 
 # navigate into the build output directory
